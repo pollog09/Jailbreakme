@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama_ctf
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+  web:
+    build: ./web
+    container_name: ai_jailbreak_web
+    ports:
+      - "0.0.0.0:5000:5000"  # Explicitly expose web service to all interfaces
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_API=http://ollama:11434
+
+volumes:
+  ollama_data:
