@@ -1,7 +1,10 @@
 # Jailbreakme
 
+![WhatsApp Image 2025-04-08 at 16 48 40_3bb647ab](https://github.com/user-attachments/assets/81a4a28c-c3b1-4238-a17b-ca20ab94849f)
+
+
 ## Overview
-Jailbreakme is a project designed to explore and demonstrate techniques for customizing and extending device functionality. This repository contains code, documentation, and resources for educational purposes.
+Jailbreakme is a project designed to explore and demonstrate techniques for jailbraking AI LLMs, and exploring AI security in general.
 
 ## Features
 - Customization tools
